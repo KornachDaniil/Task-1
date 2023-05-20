@@ -8,7 +8,7 @@ int main() {
 
     for (int i = 0; string[i]; i++) {
         if (isdigit(string[i]) != 0) {
-            if (((string[i] - '0') & 1) == 0) {
+            if ((string[i] & 1) == 0) {
                 count++;
             }
 
