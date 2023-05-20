@@ -1,6 +1,4 @@
 ﻿#include <iostream>
-#include <cstring>
-#include <stdlib.h>
 
 int main() {
     using namespace std;
@@ -10,7 +8,7 @@ int main() {
 
     for (int i = 0; i < strlen(string); i++) {
         if (isdigit(string[i]) != 0) {
-            if ((string[i] - '0') % 2 == 0) {
+            if (((string[i] - '0') & 1) == 0) {
                 count++;
             }
 
